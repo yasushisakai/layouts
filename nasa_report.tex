@@ -1,0 +1,148 @@
+\documentclass[10pt,letterpaper,notitlepage,draft]{article}
+
+% fonts: Use helvetica for headers
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+
+% margins
+\usepackage[
+letterpaper,
+left=37pt,
+right=215pt,
+top=84pt,
+bottom=62pt,
+includefoot,
+driver=dvipdfm
+]{geometry}
+\setlength{\marginparwidth}{149pt}
+\setlength{\marginparsep}{23pt}
+\renewcommand{\baselinestretch}{1.3} % line height
+
+% pages numbers changes font and position
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\textsf{\textbf{General Exam Proposal}}}
+\rhead{\textsf{\textbf{Yasushi Sakai}}}
+\rfoot{\textsf{\textbf{\thepage}}}
+\pagestyle{fancy}
+
+% no headers for the firstpage
+\fancypagestyle{firstpage}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \rfoot{\textsf{\textbf{\thepage}}}
+}
+
+% formats maketitle
+\makeatletter
+\renewcommand\@maketitle{
+\vskip -5em
+{\noindent \thickrule \par}
+\vskip 1.5em
+{\noindent \Huge \textbf{\textsf{\@title}}}
+\vskip 5em
+{\noindent \textbf{\textsf{\@author}}} \par
+{\noindent \textbf{\textsf{\@date}}} \par
+\vskip 1.5em
+{\noindent \thickrule}
+\vskip 10em \par
+}
+\makeatother
+
+% title format
+\usepackage{titlesec}
+\titleformat{\section}
+{\sffamily\Large\bfseries}
+{\thesection}{1em}{}
+
+
+%%%%%%%% usefull commands %%%%%%%%%%%%%
+
+% horizontal line
+\newcommand{\thickrule}{\hrule height 0.1mm depth 1mm width \textwidth}
+
+% marginpar flushed right
+\newcommand{\marginparright}[1]{\marginpar{\begin{flushright} {\small #1} \end{flushright}}}
+
+% \usepackage{layout} % to check the layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fields to change
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{General Exam Proposal \vskip 0.8em \noindent{\Large{Collective Versioning in Cities}}}
+\author{Yasushi Sakai}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage} % need this to change the first page
+
+
+\section{Test}
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi magna, maximus
+a magna id, sagittis blandit odio. In lacinia vulputate ipsum ut pulvinar. Sed a
+elementum arcu. \marginparright{This is a marginpar text which should be flushed right}
+Nam consequat lorem a pharetra accumsan. Morbi purus leo,
+pretium vel augue vel, tincidunt bibendum velit. Duis sollicitudin ex sed nisl
+pellentesque, ac ultrices nibh semper. Ut eget aliquet libero. Nam efficitur
+tempus ipsum. Vestibulum fermentum fermentum neque, ut iaculis velit varius
+vitae. Sed rutrum risus elementum lectus convallis bibendum. In vestibulum, nibh
+vel commodo tincidunt, eros diam ullamcorper mi, at ullamcorper dui magna sit
+amet urna. Curabitur mollis mauris quis elit malesuada pharetra. Aliquam non
+tellus a turpis fermentum elementum. Nunc eu metus lacus. Ut tortor quam,
+aliquam sed euismod ut, tempus ac neque. Aenean ut sollicitudin metus, vel
+volutpat libero.
+
+Mauris sed interdum nibh. Proin non ante eu purus consequat volutpat sed at sem.
+Vestibulum vel dui et odio gravida dignissim sit amet mollis dui. Orci varius
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras
+consequat lobortis posuere. Vivamus mollis ex eu ante molestie facilisis.
+Pellentesque ac aliquet nunc.
+
+Aenean malesuada eleifend mi vitae rhoncus. Nunc nec mauris viverra, lacinia
+lectus eget, semper turpis. Integer commodo accumsan venenatis. Donec mi nibh,
+mollis nec iaculis sit amet, convallis sit amet libero. Pellentesque quis libero
+ut nisi vestibulum rutrum. Sed vestibulum lectus ac tincidunt vehicula. Aenean a
+massa eget nulla vestibulum porttitor. Vivamus diam sapien, elementum a molestie
+vel, finibus ac tortor. Ut sit amet ultrices eros. Nulla nibh augue, auctor ut
+consectetur in, consectetur vel nisl.
+
+Sed tristique ligula risus, at lacinia purus dapibus at. Suspendisse lacinia
+tincidunt bibendum. Praesent non diam sit amet libero varius maximus non non
+odio. Sed eu purus et orci suscipit commodo. Sed eget felis vel sapien ultrices
+mollis non cursus augue. Orci varius natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. Vestibulum luctus sem lacus, id elementum mi
+fringilla sit amet. In eu augue tortor. Quisque hendrerit pretium ex, et
+pharetra diam auctor ac. Nulla sagittis, mauris eu tempus pharetra, purus arcu
+vulputate tellus, a consectetur justo odio nec ante. Nunc quis interdum justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+curae; Aenean in commodo nunc. Nunc finibus leo felis, eget tristique risus
+rhoncus id. Suspendisse potenti. Donec purus nulla, sodales nec dictum vel,
+varius sed libero.
+
+Mauris consectetur vel tortor ac placerat. Phasellus rutrum ut tellus a euismod.
+Sed ullamcorper odio nisl, vitae pulvinar massa mollis eget. Donec eget quam id
+purus luctus imperdiet sit amet eu augue. Proin porta erat diam, vel ullamcorper
+lorem ullamcorper sed. Donec nec pharetra quam. Sed ac dignissim tellus. Sed
+faucibus gravida sollicitudin. Proin vel porttitor tellus, et malesuada orci.
+
+Etiam consequat aliquet magna, quis convallis felis convallis ac. Etiam eget
+metus gravida, fringilla enim non, imperdiet lectus. Suspendisse vel ipsum
+mollis, tempor enim quis, ornare dolor. Nulla tortor nisl, facilisis eget
+maximus vel, pulvinar quis turpis. Suspendisse elementum, ante a facilisis
+dictum, est nibh vestibulum risus, sit amet tempus mauris felis vulputate risus.
+Nunc vitae lectus lacus. Donec libero libero, volutpat vitae ultrices sed,
+malesuada eget sapien. Fusce ut nibh eget purus euismod egestas quis in magna.
+Morbi gravida consectetur justo, in vestibulum ipsum porttitor a. Sed ac
+tincidunt orci. Vivamus efficitur neque libero, sit amet hendrerit arcu feugiat
+sit amet. Curabitur imperdiet risus velit, sit amet fermentum nunc interdum
+maximus. In volutpat posuere erat, eu tristique leo tempor sed.
+
+% \layout{} % to see the layout
+\end{document}
