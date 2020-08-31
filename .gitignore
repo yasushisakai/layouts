@@ -1,6 +1,5 @@
 *.aux
 *.log
-*.pdf
 *.glo
 *.idx
 *.log
@@ -24,4 +23,4 @@
 *.out
 *.synctex.gz
 
-.auxtex-auto/
+/.auxtex-auto/
